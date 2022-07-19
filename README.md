@@ -1,0 +1,1 @@
+Mini projeto de um CRUD, cadastra professores e escolas.
