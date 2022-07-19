@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/records.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="professor.js" defer></script>
+    <title>CRUD</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">Cadastro de Professor</h1>
+        <button class="button blue mobile" onclick="window.location.href = 'index.html'">Voltar</button>
+    </header>
+    <main>
+        <button type="button" class="button blue mobile" id="cadastrarProfessor">Cadastrar Professor</button>
+        <table id="tableProfessor" class="records">
+            <thead>
+                <tr>
+                    <th>Matrícula</th>
+                    <th>Nome</th>
+                    <th>Títulação</th>
+                    <th>Telefone</th>
+                    <th>E-mail</th>
+                    <th>Escola</th>
+                    <th>Endereço</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Novo Professor</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
+                    <input type="text" id="matricula" class="modal-field" placeholder="Matrícula do Professor" required>
+                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Nome do Professor" required>
+                    <input type="text" id="titulacao" class="modal-field" placeholder="Títulação do Professor" required>
+                    <input type="text" id="telefone" class="modal-field" placeholder="Telefone do Professor" required>
+                    <input type="email" id="email" class="modal-field" placeholder="E-mail do Professor" required>
+                    <input type="text" id="escola" class="modal-field" placeholder="Escola do Professor" required>
+                    </select>
+                    <input type="text" id="endereco" class="modal-field" placeholder="Endereço do Professor" required>
+                </form>
+                <footer class="modal-footer">
+                    <button id="salvar" class="button green">Salvar</button>
+                    <button id="cancelar" class="button blue">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Copyright &copy; Eric Souza Dantas
+    </footer>
+</body>
+</html>
